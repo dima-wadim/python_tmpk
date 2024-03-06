@@ -14,12 +14,13 @@ class DogAdmin(admin.ModelAdmin):
 @admin.register(Adres)
 class AdresAdmin(admin.ModelAdmin):
     list_display = ('sity', 'strit',)
-    list_filter = ('sity','strit',)
+    list_filter = ('sity', 'strit',)
 
 
 @admin.register(Prase)
 class PraseAdmin(admin.ModelAdmin):
     list_display = ('name', 'cost',)
+
 
 @admin.register(Many)
 class ManyAdmin(admin.ModelAdmin):
